@@ -6,10 +6,10 @@
 <body>
 <a href="new-in.php">افزودن خبر جدید+</a><br><hr>
 <?php
-$connect=mysqli_connect("localhost","root","","news");
+include "database-connect.php";
 $sql="select * from news";
-$resulte=mysqli_query($connect,$sql);
-while($new=mysqli_fetch_array($resulte)){
+$resulte=$connect->query($sql);;
+foreach($resulte as $new){
 	$id = $new['id'];
 	$title=$new['new_title'];
 	$writer=$new['writer_name'];
