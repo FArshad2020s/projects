@@ -4,7 +4,7 @@
 	<title>persian BBC news</title>
 </head>
 <body>
-<a href="new-in.php">افزودن خبر جدید+</a><br><hr>
+<a href="new-in.html">افزودن خبر جدید+</a><br><hr>
 <?php
 include "database-connect.php";
 $sql="select * from news";

@@ -1,8 +1,10 @@
 <?php
+if(isset($_GET['id'],$_GET['title'],$_GET['writer'],$_GET['new_text'])){
 $id=$_GET['id'];
 $title=$_GET['title'];
 $writer=$_GET['writer'];
-$new_text=$_GET['new_text'];
+$new_text=$_GET['new_text'];}
+else{exit("شما با یک خطا رو به رو شده اید");}
 ?>
 <html dir="rtl">
 	<head>
